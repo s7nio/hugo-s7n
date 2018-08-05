@@ -1,18 +1,18 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "S7n"
+name = "s7n"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
-homepage = "http://example.com/"
-tags = []
-features = []
+licenselink = "https://github.com/s7nio/hugo-s7n/blob/master/LICENSE"
+description = "Just an elegant theme"
+homepage = "https://s7n.io"
+tags = [ "blog" ]
+features = [ "blog" ]
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Sebastian Nemak"
+  homepage = "https://s7n.io"
 
 # If porting an existing theme
 [original]
