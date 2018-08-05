@@ -4,7 +4,7 @@
     layout/_default/single...
     <div>{{ .Content }}</div>
     <time datetime="{{ .Date.Format " 2018-08-05T22:00:00Z02:00" }}">
-        {{- .Date.Format "2018-08-05" -}}
+        {{- .Date.Format "January 2, 2006" -}}
     </time>
     {{ if .Params.tags }}
         <div>Tags: {{ range .Params.tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}</div>
