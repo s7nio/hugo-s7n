@@ -1,16 +1,12 @@
 {{ define "main" }}
-    {{ .Title }}
-    <hr/>
-    {{ .TableOfContents }}
-    <hr/>
-    layout/_default/single...{{ .Content }}
-    <hr/>
-    <time datetime="{{ .Date.Format " 2018-08-05T22:23:00Z01:00" }}">
-        {{- .Date.Format "2018-07-31" .Date.UTC -}}
+    <h1>{{ .Title }}</h1>
+    <div>{{ .TableOfContents }}</div>
+    layout/_default/single...
+    <div>{{ .Content }}</div>
+    <time datetime="{{ .Date.Format " 2018-08-05T22:00:00Z02:00" }}">
+        {{- .Date.Format "2018-08-05" -}}
     </time>
     {{ if .Params.tags }}
-        <div class="c-tag">
-            {{ range .Params.tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}
-        </div>
+        <div>Tags: {{ range .Params.tags }}<a href="/tags/{{ . | urlize }}">{{ . }}</a>{{ end }}</div>
     {{ end }}
 {{ end }}
